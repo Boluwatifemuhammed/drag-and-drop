@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Drag and Drop</title>
 </head>
 <body>
@@ -10,12 +11,24 @@
         <h1>Drag and Drop board</h1>
 
         <div class="board-cont">
-            <div class="list" id="list">
+            
+            <div class="list" id="list1">
                 <h2>To Do</h2>
-                <div class="card" draggable="true">Wash the car</div>
+                <div class="card" draggable="true" id="card1">Wash the car</div>
+            </div>
+
+            <div class="list" id="list2">
+                <h2>In Progress</h2>
+                <div class="card" draggable="true" id="card1">Wash the car</div>
+            </div>
+
+            <div class="list" id="list3">
+                <h2>Completed</h2>
+                <div class="card" draggable="true" id="card1">Wash the car</div>
             </div>
 
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

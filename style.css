@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'montserrat';
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.board-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.list{
+    background-color: #ededed;
+    padding: 1.4rem;
+    border-radius: 10px;
+    width: 30%;
+    min-height: 400px;
+}
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.card{
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.5rem;
+    cursor: grab;
+    transition: 0.5s ease;
+}
+
+.card:active{
+    cursor: grabbing;
+    transform: scale(1.05);
+}
