@@ -15,7 +15,7 @@ for (const list of lists) {
 }
 
 function dragStart(e) {
-    e.dataTransfer.setData("text/plain", this.id)
+    e.dataTransfer.setData("text/plain", this.id);
     
 }
 
@@ -24,29 +24,31 @@ function dragEnd() {
     
 }
 
-function dragLeave(e) {
-    
-    e.preventDefault();
+function dragOver(e) {
 
-    this.classList.add("over");
+    e.preventDefault();
 }
 
 function dragEnter(e) {
     e.preventDefault();
-    this.classList.add("over")
+    this.classList.add("over");
     
 }
 
-function dragOver(e) {
 
+function dragLeave(e) {
     this.classList.remove("over");
+
 }
 
 
+
 function dragDrop(e) {
-    const id = e.dataTransfer.getData("text/plain")
+    const id = e.dataTransfer.getData("text/plain");
 
     const card = document.getElementById(id);
+    this.appendChild(card)
+    this.classList.remove("over")
 
     
 }
