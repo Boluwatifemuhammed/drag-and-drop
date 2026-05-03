@@ -50,17 +50,17 @@ function dragDrop(e) {
     this.appendChild(card)
     this.classList.remove("over")
 
-    lists.forEach(checkEmpty);
+    // lists.forEach(checkEmpty);
 
     
 }
 
-function checkEmpty(list) {
-    const hasCards = list.querySelector(".card");
+// function checkEmpty(list) {
+//     const hasCards = list.querySelector(".card");
 
-    if (!hasCards) {
-        list.textContent = "Drop cards here";
-    } else if (list.textContent === "Drop cards here") {
-        list.textContent = "";
-    }
-}
+//     if (!hasCards) {
+//         list.textContent = "Drop cards here";
+//     } else if (list.textContent === "Drop cards here") {
+//         list.textContent = "";
+//     }
+// }
